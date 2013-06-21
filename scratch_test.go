@@ -33,8 +33,7 @@ func Benchmark_Prefix(b *testing.B) { //benchmark function starts with "Benchmar
 	stringGenerator := countersOrGuages()
 	for i := 0; i < b.N; i++ { //use b.N for looping
 		str := stringGenerator()
-		if strings.HasPrefix(str, "counters") || strings.HasPrefix(str, "gauges") {
-		}
+		if strings.HasPrefix(str, "counters") || strings.HasPrefix(str, "gauges") {}
 	}
 }
 
